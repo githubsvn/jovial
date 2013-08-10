@@ -1,0 +1,200 @@
+[Thu Jul 04 10:37:07 2013] [error] [client 127.0.0.1] PHP Parse error:  syntax error, unexpected T_ECHO in /home/www/local.tyhv/vendor/liip/imagine-bundle/Liip/ImagineBundle/Imagine/Cache/CacheManager.php on line 154
+[Thu Jul 04 10:37:07 2013] [error] [client 127.0.0.1] PHP Stack trace:
+[Thu Jul 04 10:37:07 2013] [error] [client 127.0.0.1] PHP   1. {main}() /home/www/local.tyhv/web/app.php:0
+[Thu Jul 04 10:37:07 2013] [error] [client 127.0.0.1] PHP   2. Symfony\\Component\\HttpKernel\\Kernel->handle() /home/www/local.tyhv/web/app.php:24
+[Thu Jul 04 10:37:07 2013] [error] [client 127.0.0.1] PHP   3. Symfony\\Bundle\\FrameworkBundle\\HttpKernel->handle() /home/www/local.tyhv/app/bootstrap.php.cache:619
+[Thu Jul 04 10:37:07 2013] [error] [client 127.0.0.1] PHP   4. Symfony\\Component\\HttpKernel\\HttpKernel->handle() /home/www/local.tyhv/app/bootstrap.php.cache:1568
+[Thu Jul 04 10:37:07 2013] [error] [client 127.0.0.1] PHP   5. Symfony\\Component\\HttpKernel\\HttpKernel->handleRaw() /home/www/local.tyhv/app/bootstrap.php.cache:1392
+[Thu Jul 04 10:37:07 2013] [error] [client 127.0.0.1] PHP   6. call_user_func_array() /home/www/local.tyhv/app/bootstrap.php.cache:1428
+[Thu Jul 04 10:37:07 2013] [error] [client 127.0.0.1] PHP   7. SM\\Bundle\\AdminBundle\\Controller\\NewsController->editAction() /home/www/local.tyhv/app/bootstrap.php.cache:0
+[Thu Jul 04 10:37:07 2013] [error] [client 127.0.0.1] PHP   8. Symfony\\Bundle\\FrameworkBundle\\Controller\\Controller->render() /home/www/local.tyhv/src/SM/Bundle/AdminBundle/Controller/NewsController.php:394
+[Thu Jul 04 10:37:07 2013] [error] [client 127.0.0.1] PHP   9. Symfony\\Component\\DependencyInjection\\Container->get() /home/www/local.tyhv/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Controller/Controller.php:99
+[Thu Jul 04 10:37:07 2013] [error] [client 127.0.0.1] PHP  10. appProdDebugProjectContainer->getTemplatingService() /home/www/local.tyhv/app/bootstrap.php.cache:211
+[Thu Jul 04 10:37:07 2013] [error] [client 127.0.0.1] PHP  11. Symfony\\Component\\DependencyInjection\\Container->get() /home/www/local.tyhv/app/cache/prod/appProdDebugProjectContainer.php:2043
+[Thu Jul 04 10:37:07 2013] [error] [client 127.0.0.1] PHP  12. appProdDebugProjectContainer->getTwigService() /home/www/local.tyhv/app/bootstrap.php.cache:211
+[Thu Jul 04 10:37:07 2013] [error] [client 127.0.0.1] PHP  13. Symfony\\Component\\DependencyInjection\\Container->get() /home/www/local.tyhv/app/cache/prod/appProdDebugProjectContainer.php:2722
+[Thu Jul 04 10:37:07 2013] [error] [client 127.0.0.1] PHP  14. appProdDebugProjectContainer->getLiipImagine_Cache_ManagerService() /home/www/local.tyhv/app/bootstrap.php.cache:211
+[Thu Jul 04 10:37:07 2013] [error] [client 127.0.0.1] PHP  15. Symfony\\Component\\ClassLoader\\DebugClassLoader->loadClass() /home/www/local.tyhv/vendor/symfony/symfony/src/Symfony/Component/ClassLoader/DebugClassLoader.php:0
+[Thu Jul 04 11:51:42 2013] [error] [client 127.0.0.1] PHP Fatal error:  Using $this when not in object context in /home/www/local.tyhv/src/SM/Bundle/AdminBundle/Utilities/Helper.php on line 101
+[Thu Jul 04 11:51:42 2013] [error] [client 127.0.0.1] PHP Stack trace:
+[Thu Jul 04 11:51:42 2013] [error] [client 127.0.0.1] PHP   1. {main}() /home/www/local.tyhv/web/app.php:0
+[Thu Jul 04 11:51:42 2013] [error] [client 127.0.0.1] PHP   2. Symfony\\Component\\HttpKernel\\Kernel->handle() /home/www/local.tyhv/web/app.php:24
+[Thu Jul 04 11:51:42 2013] [error] [client 127.0.0.1] PHP   3. Symfony\\Bundle\\FrameworkBundle\\HttpKernel->handle() /home/www/local.tyhv/app/bootstrap.php.cache:619
+[Thu Jul 04 11:51:42 2013] [error] [client 127.0.0.1] PHP   4. Symfony\\Component\\HttpKernel\\HttpKernel->handle() /home/www/local.tyhv/app/bootstrap.php.cache:1568
+[Thu Jul 04 11:51:42 2013] [error] [client 127.0.0.1] PHP   5. Symfony\\Component\\HttpKernel\\HttpKernel->handleRaw() /home/www/local.tyhv/app/bootstrap.php.cache:1392
+[Thu Jul 04 11:51:42 2013] [error] [client 127.0.0.1] PHP   6. call_user_func_array() /home/www/local.tyhv/app/bootstrap.php.cache:1428
+[Thu Jul 04 11:51:42 2013] [error] [client 127.0.0.1] PHP   7. SM\\Bundle\\AdminBundle\\Controller\\NewsController->editAction() /home/www/local.tyhv/app/bootstrap.php.cache:0
+[Thu Jul 04 11:51:42 2013] [error] [client 127.0.0.1] PHP   8. SM\\Bundle\\AdminBundle\\Utilities\\Helper::createThumb() /home/www/local.tyhv/src/SM/Bundle/AdminBundle/Controller/NewsController.php:385
+[Thu Jul 04 11:52:58 2013] [error] [client 127.0.0.1] PHP Fatal error:  Call to undefined method Liip\\ImagineBundle\\Controller\\ImagineController::getRequest() in /home/www/local.tyhv/src/SM/Bundle/AdminBundle/Utilities/Helper.php on line 101
+[Thu Jul 04 11:52:58 2013] [error] [client 127.0.0.1] PHP Stack trace:
+[Thu Jul 04 11:52:58 2013] [error] [client 127.0.0.1] PHP   1. {main}() /home/www/local.tyhv/web/app.php:0
+[Thu Jul 04 11:52:58 2013] [error] [client 127.0.0.1] PHP   2. Symfony\\Component\\HttpKernel\\Kernel->handle() /home/www/local.tyhv/web/app.php:24
+[Thu Jul 04 11:52:58 2013] [error] [client 127.0.0.1] PHP   3. Symfony\\Bundle\\FrameworkBundle\\HttpKernel->handle() /home/www/local.tyhv/app/bootstrap.php.cache:619
+[Thu Jul 04 11:52:58 2013] [error] [client 127.0.0.1] PHP   4. Symfony\\Component\\HttpKernel\\HttpKernel->handle() /home/www/local.tyhv/app/bootstrap.php.cache:1568
+[Thu Jul 04 11:52:58 2013] [error] [client 127.0.0.1] PHP   5. Symfony\\Component\\HttpKernel\\HttpKernel->handleRaw() /home/www/local.tyhv/app/bootstrap.php.cache:1392
+[Thu Jul 04 11:52:58 2013] [error] [client 127.0.0.1] PHP   6. call_user_func_array() /home/www/local.tyhv/app/bootstrap.php.cache:1428
+[Thu Jul 04 11:52:58 2013] [error] [client 127.0.0.1] PHP   7. SM\\Bundle\\AdminBundle\\Controller\\NewsController->editAction() /home/www/local.tyhv/app/bootstrap.php.cache:0
+[Thu Jul 04 11:52:58 2013] [error] [client 127.0.0.1] PHP   8. SM\\Bundle\\AdminBundle\\Utilities\\Helper::createThumb() /home/www/local.tyhv/src/SM/Bundle/AdminBundle/Controller/NewsController.php:385
+[Thu Jul 04 13:41:11 2013] [error] [client 127.0.0.1] PHP Fatal error:  Call to undefined method SM\\Bundle\\AdminBundle\\Entity\\Media::getImage() in /home/www/local.tyhv/src/SM/Bundle/AdminBundle/Repository/MediaRepository.php on line 44, referer: http://local.tyhv/admin/media?id=5
+[Thu Jul 04 13:41:11 2013] [error] [client 127.0.0.1] PHP Stack trace:, referer: http://local.tyhv/admin/media?id=5
+[Thu Jul 04 13:41:11 2013] [error] [client 127.0.0.1] PHP   1. {main}() /home/www/local.tyhv/web/app.php:0, referer: http://local.tyhv/admin/media?id=5
+[Thu Jul 04 13:41:11 2013] [error] [client 127.0.0.1] PHP   2. Symfony\\Component\\HttpKernel\\Kernel->handle() /home/www/local.tyhv/web/app.php:24, referer: http://local.tyhv/admin/media?id=5
+[Thu Jul 04 13:41:11 2013] [error] [client 127.0.0.1] PHP   3. Symfony\\Bundle\\FrameworkBundle\\HttpKernel->handle() /home/www/local.tyhv/app/bootstrap.php.cache:619, referer: http://local.tyhv/admin/media?id=5
+[Thu Jul 04 13:41:11 2013] [error] [client 127.0.0.1] PHP   4. Symfony\\Component\\HttpKernel\\HttpKernel->handle() /home/www/local.tyhv/app/bootstrap.php.cache:1568, referer: http://local.tyhv/admin/media?id=5
+[Thu Jul 04 13:41:11 2013] [error] [client 127.0.0.1] PHP   5. Symfony\\Component\\HttpKernel\\HttpKernel->handleRaw() /home/www/local.tyhv/app/bootstrap.php.cache:1392, referer: http://local.tyhv/admin/media?id=5
+[Thu Jul 04 13:41:11 2013] [error] [client 127.0.0.1] PHP   6. call_user_func_array() /home/www/local.tyhv/app/bootstrap.php.cache:1428, referer: http://local.tyhv/admin/media?id=5
+[Thu Jul 04 13:41:11 2013] [error] [client 127.0.0.1] PHP   7. SM\\Bundle\\AdminBundle\\Controller\\MediaController->deleteAction() /home/www/local.tyhv/app/bootstrap.php.cache:0, referer: http://local.tyhv/admin/media?id=5
+[Thu Jul 04 13:41:11 2013] [error] [client 127.0.0.1] PHP   8. SM\\Bundle\\AdminBundle\\Repository\\MediaRepository->deleteByIds() /home/www/local.tyhv/src/SM/Bundle/AdminBundle/Controller/MediaController.php:250, referer: http://local.tyhv/admin/media?id=5
+[Thu Jul 04 14:28:15 2013] [error] [client 127.0.0.1] PHP Parse error:  syntax error, unexpected '.' in /home/www/local.tyhv/src/SM/Bundle/AdminBundle/Controller/MediaController.php on line 42, referer: http://local.tyhv/admin/media/new
+[Thu Jul 04 14:28:15 2013] [error] [client 127.0.0.1] PHP Stack trace:, referer: http://local.tyhv/admin/media/new
+[Thu Jul 04 14:28:15 2013] [error] [client 127.0.0.1] PHP   1. {main}() /home/www/local.tyhv/web/app.php:0, referer: http://local.tyhv/admin/media/new
+[Thu Jul 04 14:28:15 2013] [error] [client 127.0.0.1] PHP   2. Symfony\\Component\\HttpKernel\\Kernel->handle() /home/www/local.tyhv/web/app.php:24, referer: http://local.tyhv/admin/media/new
+[Thu Jul 04 14:28:15 2013] [error] [client 127.0.0.1] PHP   3. Symfony\\Component\\HttpKernel\\Kernel->boot() /home/www/local.tyhv/app/bootstrap.php.cache:616, referer: http://local.tyhv/admin/media/new
+[Thu Jul 04 14:28:15 2013] [error] [client 127.0.0.1] PHP   4. Symfony\\Component\\HttpKernel\\Kernel->initializeContainer() /home/www/local.tyhv/app/bootstrap.php.cache:573, referer: http://local.tyhv/admin/media/new
+[Thu Jul 04 14:28:15 2013] [error] [client 127.0.0.1] PHP   5. Symfony\\Component\\HttpKernel\\CacheWarmer\\CacheWarmerAggregate->warmUp() /home/www/local.tyhv/app/bootstrap.php.cache:873, referer: http://local.tyhv/admin/media/new
+[Thu Jul 04 14:28:15 2013] [error] [client 127.0.0.1] PHP   6. JMS\\DiExtraBundle\\HttpKernel\\ControllerInjectorsWarmer->warmUp() /home/www/local.tyhv/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/CacheWarmer/CacheWarmerAggregate.php:47, referer: http://local.tyhv/admin/media/new
+[Thu Jul 04 14:28:15 2013] [error] [client 127.0.0.1] PHP   7. JMS\\DiExtraBundle\\HttpKernel\\ControllerInjectorsWarmer->findControllerClasses() /home/www/local.tyhv/vendor/jms/di-extra-bundle/JMS/DiExtraBundle/HttpKernel/ControllerInjectorsWarmer.php:29, referer: http://local.tyhv/admin/media/new
+[Thu Jul 04 18:35:56 2013] [error] [client 127.0.0.1] PHP Fatal error:  Call to a member function getMenu() on a non-object in /home/www/local.tyhv/src/SM/Bundle/AdminBundle/Repository/MenuLanguageRepository.php on line 56, referer: http://local.tyhv/admin/menu/2/2
+[Thu Jul 04 18:35:56 2013] [error] [client 127.0.0.1] PHP Stack trace:, referer: http://local.tyhv/admin/menu/2/2
+[Thu Jul 04 18:35:56 2013] [error] [client 127.0.0.1] PHP   1. {main}() /home/www/local.tyhv/web/app.php:0, referer: http://local.tyhv/admin/menu/2/2
+[Thu Jul 04 18:35:56 2013] [error] [client 127.0.0.1] PHP   2. Symfony\\Component\\HttpKernel\\Kernel->handle() /home/www/local.tyhv/web/app.php:24, referer: http://local.tyhv/admin/menu/2/2
+[Thu Jul 04 18:35:56 2013] [error] [client 127.0.0.1] PHP   3. Symfony\\Bundle\\FrameworkBundle\\HttpKernel->handle() /home/www/local.tyhv/app/bootstrap.php.cache:619, referer: http://local.tyhv/admin/menu/2/2
+[Thu Jul 04 18:35:56 2013] [error] [client 127.0.0.1] PHP   4. Symfony\\Component\\HttpKernel\\HttpKernel->handle() /home/www/local.tyhv/app/bootstrap.php.cache:1568, referer: http://local.tyhv/admin/menu/2/2
+[Thu Jul 04 18:35:56 2013] [error] [client 127.0.0.1] PHP   5. Symfony\\Component\\HttpKernel\\HttpKernel->handleRaw() /home/www/local.tyhv/app/bootstrap.php.cache:1392, referer: http://local.tyhv/admin/menu/2/2
+[Thu Jul 04 18:35:56 2013] [error] [client 127.0.0.1] PHP   6. call_user_func_array() /home/www/local.tyhv/app/bootstrap.php.cache:1428, referer: http://local.tyhv/admin/menu/2/2
+[Thu Jul 04 18:35:56 2013] [error] [client 127.0.0.1] PHP   7. SM\\Bundle\\AdminBundle\\Controller\\MenuController->deleteAllAction() /home/www/local.tyhv/app/bootstrap.php.cache:0, referer: http://local.tyhv/admin/menu/2/2
+[Thu Jul 04 18:35:56 2013] [error] [client 127.0.0.1] PHP   8. SM\\Bundle\\AdminBundle\\Repository\\MenuLanguageRepository->deleteByIds() /home/www/local.tyhv/src/SM/Bundle/AdminBundle/Controller/MenuController.php:536, referer: http://local.tyhv/admin/menu/2/2
+[Thu Jul 04 18:38:27 2013] [error] [client 127.0.0.1] PHP Fatal error:  Call to a member function getMenu() on a non-object in /home/www/local.tyhv/src/SM/Bundle/AdminBundle/Repository/MenuLanguageRepository.php on line 56, referer: http://local.tyhv/admin/menu/2/2
+[Thu Jul 04 18:38:27 2013] [error] [client 127.0.0.1] PHP Stack trace:, referer: http://local.tyhv/admin/menu/2/2
+[Thu Jul 04 18:38:27 2013] [error] [client 127.0.0.1] PHP   1. {main}() /home/www/local.tyhv/web/app.php:0, referer: http://local.tyhv/admin/menu/2/2
+[Thu Jul 04 18:38:27 2013] [error] [client 127.0.0.1] PHP   2. Symfony\\Component\\HttpKernel\\Kernel->handle() /home/www/local.tyhv/web/app.php:24, referer: http://local.tyhv/admin/menu/2/2
+[Thu Jul 04 18:38:27 2013] [error] [client 127.0.0.1] PHP   3. Symfony\\Bundle\\FrameworkBundle\\HttpKernel->handle() /home/www/local.tyhv/app/bootstrap.php.cache:619, referer: http://local.tyhv/admin/menu/2/2
+[Thu Jul 04 18:38:27 2013] [error] [client 127.0.0.1] PHP   4. Symfony\\Component\\HttpKernel\\HttpKernel->handle() /home/www/local.tyhv/app/bootstrap.php.cache:1568, referer: http://local.tyhv/admin/menu/2/2
+[Thu Jul 04 18:38:27 2013] [error] [client 127.0.0.1] PHP   5. Symfony\\Component\\HttpKernel\\HttpKernel->handleRaw() /home/www/local.tyhv/app/bootstrap.php.cache:1392, referer: http://local.tyhv/admin/menu/2/2
+[Thu Jul 04 18:38:27 2013] [error] [client 127.0.0.1] PHP   6. call_user_func_array() /home/www/local.tyhv/app/bootstrap.php.cache:1428, referer: http://local.tyhv/admin/menu/2/2
+[Thu Jul 04 18:38:27 2013] [error] [client 127.0.0.1] PHP   7. SM\\Bundle\\AdminBundle\\Controller\\MenuController->deleteAllAction() /home/www/local.tyhv/app/bootstrap.php.cache:0, referer: http://local.tyhv/admin/menu/2/2
+[Thu Jul 04 18:38:27 2013] [error] [client 127.0.0.1] PHP   8. SM\\Bundle\\AdminBundle\\Repository\\MenuLanguageRepository->deleteByIds() /home/www/local.tyhv/src/SM/Bundle/AdminBundle/Controller/MenuController.php:536, referer: http://local.tyhv/admin/menu/2/2
+[Thu Jul 04 18:55:34 2013] [error] [client 127.0.0.1] PHP Fatal error:  Call to a member function getNews() on a non-object in /home/www/local.tyhv/src/SM/Bundle/AdminBundle/Repository/NewsLanguageRepository.php on line 57, referer: http://local.tyhv/admin/news
+[Thu Jul 04 18:55:34 2013] [error] [client 127.0.0.1] PHP Stack trace:, referer: http://local.tyhv/admin/news
+[Thu Jul 04 18:55:34 2013] [error] [client 127.0.0.1] PHP   1. {main}() /home/www/local.tyhv/web/app.php:0, referer: http://local.tyhv/admin/news
+[Thu Jul 04 18:55:34 2013] [error] [client 127.0.0.1] PHP   2. Symfony\\Component\\HttpKernel\\Kernel->handle() /home/www/local.tyhv/web/app.php:24, referer: http://local.tyhv/admin/news
+[Thu Jul 04 18:55:34 2013] [error] [client 127.0.0.1] PHP   3. Symfony\\Bundle\\FrameworkBundle\\HttpKernel->handle() /home/www/local.tyhv/app/bootstrap.php.cache:619, referer: http://local.tyhv/admin/news
+[Thu Jul 04 18:55:34 2013] [error] [client 127.0.0.1] PHP   4. Symfony\\Component\\HttpKernel\\HttpKernel->handle() /home/www/local.tyhv/app/bootstrap.php.cache:1568, referer: http://local.tyhv/admin/news
+[Thu Jul 04 18:55:34 2013] [error] [client 127.0.0.1] PHP   5. Symfony\\Component\\HttpKernel\\HttpKernel->handleRaw() /home/www/local.tyhv/app/bootstrap.php.cache:1392, referer: http://local.tyhv/admin/news
+[Thu Jul 04 18:55:34 2013] [error] [client 127.0.0.1] PHP   6. call_user_func_array() /home/www/local.tyhv/app/bootstrap.php.cache:1428, referer: http://local.tyhv/admin/news
+[Thu Jul 04 18:55:34 2013] [error] [client 127.0.0.1] PHP   7. SM\\Bundle\\AdminBundle\\Controller\\NewsController->deleteAllAction() /home/www/local.tyhv/app/bootstrap.php.cache:0, referer: http://local.tyhv/admin/news
+[Thu Jul 04 18:55:34 2013] [error] [client 127.0.0.1] PHP   8. SM\\Bundle\\AdminBundle\\Repository\\NewsLanguageRepository->deleteByIds() /home/www/local.tyhv/src/SM/Bundle/AdminBundle/Controller/NewsController.php:467, referer: http://local.tyhv/admin/news
+[Fri Jul 05 11:15:48 2013] [error] [client 127.0.0.1] PHP Fatal error:  Call to a member function getName() on a non-object in /home/www/local.tyhv/src/SM/Bundle/AdminBundle/Repository/CompanyRepository.php on line 110, referer: http://local.tyhv/admin/menu/new
+[Fri Jul 05 11:15:48 2013] [error] [client 127.0.0.1] PHP Stack trace:, referer: http://local.tyhv/admin/menu/new
+[Fri Jul 05 11:15:48 2013] [error] [client 127.0.0.1] PHP   1. {main}() /home/www/local.tyhv/web/app.php:0, referer: http://local.tyhv/admin/menu/new
+[Fri Jul 05 11:15:48 2013] [error] [client 127.0.0.1] PHP   2. Symfony\\Component\\HttpKernel\\Kernel->handle() /home/www/local.tyhv/web/app.php:24, referer: http://local.tyhv/admin/menu/new
+[Fri Jul 05 11:15:48 2013] [error] [client 127.0.0.1] PHP   3. Symfony\\Bundle\\FrameworkBundle\\HttpKernel->handle() /home/www/local.tyhv/app/bootstrap.php.cache:619, referer: http://local.tyhv/admin/menu/new
+[Fri Jul 05 11:15:48 2013] [error] [client 127.0.0.1] PHP   4. Symfony\\Component\\HttpKernel\\HttpKernel->handle() /home/www/local.tyhv/app/bootstrap.php.cache:1568, referer: http://local.tyhv/admin/menu/new
+[Fri Jul 05 11:15:48 2013] [error] [client 127.0.0.1] PHP   5. Symfony\\Component\\HttpKernel\\HttpKernel->handleRaw() /home/www/local.tyhv/app/bootstrap.php.cache:1392, referer: http://local.tyhv/admin/menu/new
+[Fri Jul 05 11:15:48 2013] [error] [client 127.0.0.1] PHP   6. call_user_func_array() /home/www/local.tyhv/app/bootstrap.php.cache:1428, referer: http://local.tyhv/admin/menu/new
+[Fri Jul 05 11:15:48 2013] [error] [client 127.0.0.1] PHP   7. SM\\Bundle\\AdminBundle\\Controller\\MenuController->getParamAction() /home/www/local.tyhv/app/bootstrap.php.cache:0, referer: http://local.tyhv/admin/menu/new
+[Fri Jul 05 11:15:48 2013] [error] [client 127.0.0.1] PHP   8. SM\\Bundle\\AdminBundle\\Repository\\MenuRepository->getOptionParam() /home/www/local.tyhv/src/SM/Bundle/AdminBundle/Controller/MenuController.php:378, referer: http://local.tyhv/admin/menu/new
+[Fri Jul 05 11:15:48 2013] [error] [client 127.0.0.1] PHP   9. SM\\Bundle\\AdminBundle\\Repository\\CompanyRepository->getOptions() /home/www/local.tyhv/src/SM/Bundle/AdminBundle/Repository/MenuRepository.php:469, referer: http://local.tyhv/admin/menu/new
+[Fri Jul 05 11:16:09 2013] [error] [client 127.0.0.1] PHP Fatal error:  Call to a member function getName() on a non-object in /home/www/local.tyhv/src/SM/Bundle/AdminBundle/Repository/CompanyRepository.php on line 110, referer: http://local.tyhv/admin/menu/new
+[Fri Jul 05 11:16:09 2013] [error] [client 127.0.0.1] PHP Stack trace:, referer: http://local.tyhv/admin/menu/new
+[Fri Jul 05 11:16:09 2013] [error] [client 127.0.0.1] PHP   1. {main}() /home/www/local.tyhv/web/app.php:0, referer: http://local.tyhv/admin/menu/new
+[Fri Jul 05 11:16:09 2013] [error] [client 127.0.0.1] PHP   2. Symfony\\Component\\HttpKernel\\Kernel->handle() /home/www/local.tyhv/web/app.php:24, referer: http://local.tyhv/admin/menu/new
+[Fri Jul 05 11:16:09 2013] [error] [client 127.0.0.1] PHP   3. Symfony\\Bundle\\FrameworkBundle\\HttpKernel->handle() /home/www/local.tyhv/app/bootstrap.php.cache:619, referer: http://local.tyhv/admin/menu/new
+[Fri Jul 05 11:16:09 2013] [error] [client 127.0.0.1] PHP   4. Symfony\\Component\\HttpKernel\\HttpKernel->handle() /home/www/local.tyhv/app/bootstrap.php.cache:1568, referer: http://local.tyhv/admin/menu/new
+[Fri Jul 05 11:16:09 2013] [error] [client 127.0.0.1] PHP   5. Symfony\\Component\\HttpKernel\\HttpKernel->handleRaw() /home/www/local.tyhv/app/bootstrap.php.cache:1392, referer: http://local.tyhv/admin/menu/new
+[Fri Jul 05 11:16:09 2013] [error] [client 127.0.0.1] PHP   6. call_user_func_array() /home/www/local.tyhv/app/bootstrap.php.cache:1428, referer: http://local.tyhv/admin/menu/new
+[Fri Jul 05 11:16:09 2013] [error] [client 127.0.0.1] PHP   7. SM\\Bundle\\AdminBundle\\Controller\\MenuController->getParamAction() /home/www/local.tyhv/app/bootstrap.php.cache:0, referer: http://local.tyhv/admin/menu/new
+[Fri Jul 05 11:16:09 2013] [error] [client 127.0.0.1] PHP   8. SM\\Bundle\\AdminBundle\\Repository\\MenuRepository->getOptionParam() /home/www/local.tyhv/src/SM/Bundle/AdminBundle/Controller/MenuController.php:378, referer: http://local.tyhv/admin/menu/new
+[Fri Jul 05 11:16:09 2013] [error] [client 127.0.0.1] PHP   9. SM\\Bundle\\AdminBundle\\Repository\\CompanyRepository->getOptions() /home/www/local.tyhv/src/SM/Bundle/AdminBundle/Repository/MenuRepository.php:469, referer: http://local.tyhv/admin/menu/new
+[Fri Jul 05 11:18:33 2013] [error] [client 127.0.0.1] PHP Fatal error:  Call to a member function getName() on a non-object in /home/www/local.tyhv/src/SM/Bundle/AdminBundle/Repository/CompanyRepository.php on line 110, referer: http://local.tyhv/admin/menu/new
+[Fri Jul 05 11:18:33 2013] [error] [client 127.0.0.1] PHP Stack trace:, referer: http://local.tyhv/admin/menu/new
+[Fri Jul 05 11:18:33 2013] [error] [client 127.0.0.1] PHP   1. {main}() /home/www/local.tyhv/web/app.php:0, referer: http://local.tyhv/admin/menu/new
+[Fri Jul 05 11:18:33 2013] [error] [client 127.0.0.1] PHP   2. Symfony\\Component\\HttpKernel\\Kernel->handle() /home/www/local.tyhv/web/app.php:24, referer: http://local.tyhv/admin/menu/new
+[Fri Jul 05 11:18:33 2013] [error] [client 127.0.0.1] PHP   3. Symfony\\Bundle\\FrameworkBundle\\HttpKernel->handle() /home/www/local.tyhv/app/bootstrap.php.cache:619, referer: http://local.tyhv/admin/menu/new
+[Fri Jul 05 11:18:33 2013] [error] [client 127.0.0.1] PHP   4. Symfony\\Component\\HttpKernel\\HttpKernel->handle() /home/www/local.tyhv/app/bootstrap.php.cache:1568, referer: http://local.tyhv/admin/menu/new
+[Fri Jul 05 11:18:33 2013] [error] [client 127.0.0.1] PHP   5. Symfony\\Component\\HttpKernel\\HttpKernel->handleRaw() /home/www/local.tyhv/app/bootstrap.php.cache:1392, referer: http://local.tyhv/admin/menu/new
+[Fri Jul 05 11:18:33 2013] [error] [client 127.0.0.1] PHP   6. call_user_func_array() /home/www/local.tyhv/app/bootstrap.php.cache:1428, referer: http://local.tyhv/admin/menu/new
+[Fri Jul 05 11:18:33 2013] [error] [client 127.0.0.1] PHP   7. SM\\Bundle\\AdminBundle\\Controller\\MenuController->getParamAction() /home/www/local.tyhv/app/bootstrap.php.cache:0, referer: http://local.tyhv/admin/menu/new
+[Fri Jul 05 11:18:33 2013] [error] [client 127.0.0.1] PHP   8. SM\\Bundle\\AdminBundle\\Repository\\MenuRepository->getOptionParam() /home/www/local.tyhv/src/SM/Bundle/AdminBundle/Controller/MenuController.php:378, referer: http://local.tyhv/admin/menu/new
+[Fri Jul 05 11:18:33 2013] [error] [client 127.0.0.1] PHP   9. SM\\Bundle\\AdminBundle\\Repository\\CompanyRepository->getOptions() /home/www/local.tyhv/src/SM/Bundle/AdminBundle/Repository/MenuRepository.php:469, referer: http://local.tyhv/admin/menu/new
+[Fri Jul 05 11:19:03 2013] [error] [client 127.0.0.1] PHP Fatal error:  Call to a member function getName() on a non-object in /home/www/local.tyhv/src/SM/Bundle/AdminBundle/Repository/CompanyRepository.php on line 110, referer: http://local.tyhv/admin/menu/new
+[Fri Jul 05 11:19:03 2013] [error] [client 127.0.0.1] PHP Stack trace:, referer: http://local.tyhv/admin/menu/new
+[Fri Jul 05 11:19:03 2013] [error] [client 127.0.0.1] PHP   1. {main}() /home/www/local.tyhv/web/app.php:0, referer: http://local.tyhv/admin/menu/new
+[Fri Jul 05 11:19:03 2013] [error] [client 127.0.0.1] PHP   2. Symfony\\Component\\HttpKernel\\Kernel->handle() /home/www/local.tyhv/web/app.php:24, referer: http://local.tyhv/admin/menu/new
+[Fri Jul 05 11:19:03 2013] [error] [client 127.0.0.1] PHP   3. Symfony\\Bundle\\FrameworkBundle\\HttpKernel->handle() /home/www/local.tyhv/app/bootstrap.php.cache:619, referer: http://local.tyhv/admin/menu/new
+[Fri Jul 05 11:19:03 2013] [error] [client 127.0.0.1] PHP   4. Symfony\\Component\\HttpKernel\\HttpKernel->handle() /home/www/local.tyhv/app/bootstrap.php.cache:1568, referer: http://local.tyhv/admin/menu/new
+[Fri Jul 05 11:19:03 2013] [error] [client 127.0.0.1] PHP   5. Symfony\\Component\\HttpKernel\\HttpKernel->handleRaw() /home/www/local.tyhv/app/bootstrap.php.cache:1392, referer: http://local.tyhv/admin/menu/new
+[Fri Jul 05 11:19:03 2013] [error] [client 127.0.0.1] PHP   6. call_user_func_array() /home/www/local.tyhv/app/bootstrap.php.cache:1428, referer: http://local.tyhv/admin/menu/new
+[Fri Jul 05 11:19:03 2013] [error] [client 127.0.0.1] PHP   7. SM\\Bundle\\AdminBundle\\Controller\\MenuController->getParamAction() /home/www/local.tyhv/app/bootstrap.php.cache:0, referer: http://local.tyhv/admin/menu/new
+[Fri Jul 05 11:19:03 2013] [error] [client 127.0.0.1] PHP   8. SM\\Bundle\\AdminBundle\\Repository\\MenuRepository->getOptionParam() /home/www/local.tyhv/src/SM/Bundle/AdminBundle/Controller/MenuController.php:378, referer: http://local.tyhv/admin/menu/new
+[Fri Jul 05 11:19:03 2013] [error] [client 127.0.0.1] PHP   9. SM\\Bundle\\AdminBundle\\Repository\\CompanyRepository->getOptions() /home/www/local.tyhv/src/SM/Bundle/AdminBundle/Repository/MenuRepository.php:469, referer: http://local.tyhv/admin/menu/new
+[Fri Jul 05 11:20:24 2013] [error] [client 127.0.0.1] PHP Fatal error:  Call to a member function getName() on a non-object in /home/www/local.tyhv/src/SM/Bundle/AdminBundle/Repository/CompanyRepository.php on line 110, referer: http://local.tyhv/admin/menu/new
+[Fri Jul 05 11:20:24 2013] [error] [client 127.0.0.1] PHP Stack trace:, referer: http://local.tyhv/admin/menu/new
+[Fri Jul 05 11:20:24 2013] [error] [client 127.0.0.1] PHP   1. {main}() /home/www/local.tyhv/web/app.php:0, referer: http://local.tyhv/admin/menu/new
+[Fri Jul 05 11:20:24 2013] [error] [client 127.0.0.1] PHP   2. Symfony\\Component\\HttpKernel\\Kernel->handle() /home/www/local.tyhv/web/app.php:24, referer: http://local.tyhv/admin/menu/new
+[Fri Jul 05 11:20:24 2013] [error] [client 127.0.0.1] PHP   3. Symfony\\Bundle\\FrameworkBundle\\HttpKernel->handle() /home/www/local.tyhv/app/bootstrap.php.cache:619, referer: http://local.tyhv/admin/menu/new
+[Fri Jul 05 11:20:24 2013] [error] [client 127.0.0.1] PHP   4. Symfony\\Component\\HttpKernel\\HttpKernel->handle() /home/www/local.tyhv/app/bootstrap.php.cache:1568, referer: http://local.tyhv/admin/menu/new
+[Fri Jul 05 11:20:24 2013] [error] [client 127.0.0.1] PHP   5. Symfony\\Component\\HttpKernel\\HttpKernel->handleRaw() /home/www/local.tyhv/app/bootstrap.php.cache:1392, referer: http://local.tyhv/admin/menu/new
+[Fri Jul 05 11:20:24 2013] [error] [client 127.0.0.1] PHP   6. call_user_func_array() /home/www/local.tyhv/app/bootstrap.php.cache:1428, referer: http://local.tyhv/admin/menu/new
+[Fri Jul 05 11:20:24 2013] [error] [client 127.0.0.1] PHP   7. SM\\Bundle\\AdminBundle\\Controller\\MenuController->getParamAction() /home/www/local.tyhv/app/bootstrap.php.cache:0, referer: http://local.tyhv/admin/menu/new
+[Fri Jul 05 11:20:24 2013] [error] [client 127.0.0.1] PHP   8. SM\\Bundle\\AdminBundle\\Repository\\MenuRepository->getOptionParam() /home/www/local.tyhv/src/SM/Bundle/AdminBundle/Controller/MenuController.php:378, referer: http://local.tyhv/admin/menu/new
+[Fri Jul 05 11:20:24 2013] [error] [client 127.0.0.1] PHP   9. SM\\Bundle\\AdminBundle\\Repository\\CompanyRepository->getOptions() /home/www/local.tyhv/src/SM/Bundle/AdminBundle/Repository/MenuRepository.php:469, referer: http://local.tyhv/admin/menu/new
+[Mon Jul 08 09:58:17 2013] [error] [client 127.0.0.1] PHP Fatal error:  Class 'SM\\Bundle\\AdminBundle\\Controller\\Category' not found in /home/www/local.tyhv/src/SM/Bundle/AdminBundle/Controller/BranchController.php on line 101, referer: http://local.tyhv/admin/branch
+[Mon Jul 08 09:58:17 2013] [error] [client 127.0.0.1] PHP Stack trace:, referer: http://local.tyhv/admin/branch
+[Mon Jul 08 09:58:17 2013] [error] [client 127.0.0.1] PHP   1. {main}() /home/www/local.tyhv/web/app.php:0, referer: http://local.tyhv/admin/branch
+[Mon Jul 08 09:58:17 2013] [error] [client 127.0.0.1] PHP   2. Symfony\\Component\\HttpKernel\\Kernel->handle() /home/www/local.tyhv/web/app.php:24, referer: http://local.tyhv/admin/branch
+[Mon Jul 08 09:58:17 2013] [error] [client 127.0.0.1] PHP   3. Symfony\\Bundle\\FrameworkBundle\\HttpKernel->handle() /home/www/local.tyhv/app/bootstrap.php.cache:619, referer: http://local.tyhv/admin/branch
+[Mon Jul 08 09:58:17 2013] [error] [client 127.0.0.1] PHP   4. Symfony\\Component\\HttpKernel\\HttpKernel->handle() /home/www/local.tyhv/app/bootstrap.php.cache:1568, referer: http://local.tyhv/admin/branch
+[Mon Jul 08 09:58:17 2013] [error] [client 127.0.0.1] PHP   5. Symfony\\Component\\HttpKernel\\HttpKernel->handleRaw() /home/www/local.tyhv/app/bootstrap.php.cache:1392, referer: http://local.tyhv/admin/branch
+[Mon Jul 08 09:58:17 2013] [error] [client 127.0.0.1] PHP   6. call_user_func_array() /home/www/local.tyhv/app/bootstrap.php.cache:1428, referer: http://local.tyhv/admin/branch
+[Mon Jul 08 09:58:17 2013] [error] [client 127.0.0.1] PHP   7. SM\\Bundle\\AdminBundle\\Controller\\BranchController->newAction() /home/www/local.tyhv/app/bootstrap.php.cache:0, referer: http://local.tyhv/admin/branch
+[Mon Jul 08 10:35:09 2013] [error] [client 127.0.0.1] PHP Fatal error:  Call to a member function getMenu() on a non-object in /home/www/local.tyhv/src/SM/Bundle/AdminBundle/Repository/MenuLanguageRepository.php on line 56, referer: http://local.tyhv/admin/menu
+[Mon Jul 08 10:35:09 2013] [error] [client 127.0.0.1] PHP Stack trace:, referer: http://local.tyhv/admin/menu
+[Mon Jul 08 10:35:09 2013] [error] [client 127.0.0.1] PHP   1. {main}() /home/www/local.tyhv/web/app.php:0, referer: http://local.tyhv/admin/menu
+[Mon Jul 08 10:35:09 2013] [error] [client 127.0.0.1] PHP   2. Symfony\\Component\\HttpKernel\\Kernel->handle() /home/www/local.tyhv/web/app.php:24, referer: http://local.tyhv/admin/menu
+[Mon Jul 08 10:35:09 2013] [error] [client 127.0.0.1] PHP   3. Symfony\\Bundle\\FrameworkBundle\\HttpKernel->handle() /home/www/local.tyhv/app/bootstrap.php.cache:619, referer: http://local.tyhv/admin/menu
+[Mon Jul 08 10:35:09 2013] [error] [client 127.0.0.1] PHP   4. Symfony\\Component\\HttpKernel\\HttpKernel->handle() /home/www/local.tyhv/app/bootstrap.php.cache:1568, referer: http://local.tyhv/admin/menu
+[Mon Jul 08 10:35:09 2013] [error] [client 127.0.0.1] PHP   5. Symfony\\Component\\HttpKernel\\HttpKernel->handleRaw() /home/www/local.tyhv/app/bootstrap.php.cache:1392, referer: http://local.tyhv/admin/menu
+[Mon Jul 08 10:35:09 2013] [error] [client 127.0.0.1] PHP   6. call_user_func_array() /home/www/local.tyhv/app/bootstrap.php.cache:1428, referer: http://local.tyhv/admin/menu
+[Mon Jul 08 10:35:09 2013] [error] [client 127.0.0.1] PHP   7. SM\\Bundle\\AdminBundle\\Controller\\MenuController->deleteAllAction() /home/www/local.tyhv/app/bootstrap.php.cache:0, referer: http://local.tyhv/admin/menu
+[Mon Jul 08 10:35:09 2013] [error] [client 127.0.0.1] PHP   8. SM\\Bundle\\AdminBundle\\Repository\\MenuLanguageRepository->deleteByIds() /home/www/local.tyhv/src/SM/Bundle/AdminBundle/Controller/MenuController.php:536, referer: http://local.tyhv/admin/menu
+[Mon Jul 08 11:51:24 2013] [error] [client 127.0.0.1] PHP Fatal error:  Call to a member function getCategory() on a non-object in /home/www/local.tyhv/src/SM/Bundle/AdminBundle/Repository/CategoryLanguageRepository.php on line 56, referer: http://local.tyhv/admin/category
+[Mon Jul 08 11:51:24 2013] [error] [client 127.0.0.1] PHP Stack trace:, referer: http://local.tyhv/admin/category
+[Mon Jul 08 11:51:24 2013] [error] [client 127.0.0.1] PHP   1. {main}() /home/www/local.tyhv/web/app.php:0, referer: http://local.tyhv/admin/category
+[Mon Jul 08 11:51:24 2013] [error] [client 127.0.0.1] PHP   2. Symfony\\Component\\HttpKernel\\Kernel->handle() /home/www/local.tyhv/web/app.php:24, referer: http://local.tyhv/admin/category
+[Mon Jul 08 11:51:24 2013] [error] [client 127.0.0.1] PHP   3. Symfony\\Bundle\\FrameworkBundle\\HttpKernel->handle() /home/www/local.tyhv/app/bootstrap.php.cache:619, referer: http://local.tyhv/admin/category
+[Mon Jul 08 11:51:24 2013] [error] [client 127.0.0.1] PHP   4. Symfony\\Component\\HttpKernel\\HttpKernel->handle() /home/www/local.tyhv/app/bootstrap.php.cache:1568, referer: http://local.tyhv/admin/category
+[Mon Jul 08 11:51:24 2013] [error] [client 127.0.0.1] PHP   5. Symfony\\Component\\HttpKernel\\HttpKernel->handleRaw() /home/www/local.tyhv/app/bootstrap.php.cache:1392, referer: http://local.tyhv/admin/category
+[Mon Jul 08 11:51:24 2013] [error] [client 127.0.0.1] PHP   6. call_user_func_array() /home/www/local.tyhv/app/bootstrap.php.cache:1428, referer: http://local.tyhv/admin/category
+[Mon Jul 08 11:51:24 2013] [error] [client 127.0.0.1] PHP   7. SM\\Bundle\\AdminBundle\\Controller\\CategoryController->deleteAllAction() /home/www/local.tyhv/app/bootstrap.php.cache:0, referer: http://local.tyhv/admin/category
+[Mon Jul 08 11:51:24 2013] [error] [client 127.0.0.1] PHP   8. SM\\Bundle\\AdminBundle\\Repository\\CategoryLanguageRepository->deleteByIds() /home/www/local.tyhv/src/SM/Bundle/AdminBundle/Controller/CategoryController.php:373, referer: http://local.tyhv/admin/category
+[Fri Jul 12 11:13:58 2013] [error] [client 127.0.0.1] PHP Fatal error:  Call to a member function getTreeName() on a non-object in /home/www/local.tyhv/src/SM/Bundle/AdminBundle/Repository/MenuRepository.php on line 575, referer: http://local.tyhv/admin/menu/new
+[Fri Jul 12 11:13:58 2013] [error] [client 127.0.0.1] PHP Stack trace:, referer: http://local.tyhv/admin/menu/new
+[Fri Jul 12 11:13:58 2013] [error] [client 127.0.0.1] PHP   1. {main}() /home/www/local.tyhv/web/app.php:0, referer: http://local.tyhv/admin/menu/new
+[Fri Jul 12 11:13:58 2013] [error] [client 127.0.0.1] PHP   2. Symfony\\Component\\HttpKernel\\Kernel->handle() /home/www/local.tyhv/web/app.php:24, referer: http://local.tyhv/admin/menu/new
+[Fri Jul 12 11:13:58 2013] [error] [client 127.0.0.1] PHP   3. Symfony\\Bundle\\FrameworkBundle\\HttpKernel->handle() /home/www/local.tyhv/app/bootstrap.php.cache:619, referer: http://local.tyhv/admin/menu/new
+[Fri Jul 12 11:13:58 2013] [error] [client 127.0.0.1] PHP   4. Symfony\\Component\\HttpKernel\\HttpKernel->handle() /home/www/local.tyhv/app/bootstrap.php.cache:1568, referer: http://local.tyhv/admin/menu/new
+[Fri Jul 12 11:13:58 2013] [error] [client 127.0.0.1] PHP   5. Symfony\\Component\\HttpKernel\\HttpKernel->handleRaw() /home/www/local.tyhv/app/bootstrap.php.cache:1392, referer: http://local.tyhv/admin/menu/new
+[Fri Jul 12 11:13:58 2013] [error] [client 127.0.0.1] PHP   6. call_user_func_array() /home/www/local.tyhv/app/bootstrap.php.cache:1428, referer: http://local.tyhv/admin/menu/new
+[Fri Jul 12 11:13:58 2013] [error] [client 127.0.0.1] PHP   7. SM\\Bundle\\AdminBundle\\Controller\\MenuController->getMenuParentByPositionAction() /home/www/local.tyhv/app/bootstrap.php.cache:0, referer: http://local.tyhv/admin/menu/new
+[Fri Jul 12 11:13:58 2013] [error] [client 127.0.0.1] PHP   8. SM\\Bundle\\AdminBundle\\Repository\\MenuRepository->getOptionParent() /home/www/local.tyhv/src/SM/Bundle/AdminBundle/Controller/MenuController.php:583, referer: http://local.tyhv/admin/menu/new
+[Fri Jul 12 11:15:33 2013] [error] [client 127.0.0.1] PHP Fatal error:  Call to a member function getTreeName() on a non-object in /home/www/local.tyhv/src/SM/Bundle/AdminBundle/Repository/MenuRepository.php on line 576, referer: http://local.tyhv/admin/menu/new
+[Fri Jul 12 11:15:33 2013] [error] [client 127.0.0.1] PHP Stack trace:, referer: http://local.tyhv/admin/menu/new
+[Fri Jul 12 11:15:33 2013] [error] [client 127.0.0.1] PHP   1. {main}() /home/www/local.tyhv/web/app.php:0, referer: http://local.tyhv/admin/menu/new
+[Fri Jul 12 11:15:33 2013] [error] [client 127.0.0.1] PHP   2. Symfony\\Component\\HttpKernel\\Kernel->handle() /home/www/local.tyhv/web/app.php:24, referer: http://local.tyhv/admin/menu/new
+[Fri Jul 12 11:15:33 2013] [error] [client 127.0.0.1] PHP   3. Symfony\\Bundle\\FrameworkBundle\\HttpKernel->handle() /home/www/local.tyhv/app/bootstrap.php.cache:619, referer: http://local.tyhv/admin/menu/new
+[Fri Jul 12 11:15:33 2013] [error] [client 127.0.0.1] PHP   4. Symfony\\Component\\HttpKernel\\HttpKernel->handle() /home/www/local.tyhv/app/bootstrap.php.cache:1568, referer: http://local.tyhv/admin/menu/new
+[Fri Jul 12 11:15:33 2013] [error] [client 127.0.0.1] PHP   5. Symfony\\Component\\HttpKernel\\HttpKernel->handleRaw() /home/www/local.tyhv/app/bootstrap.php.cache:1392, referer: http://local.tyhv/admin/menu/new
+[Fri Jul 12 11:15:33 2013] [error] [client 127.0.0.1] PHP   6. call_user_func_array() /home/www/local.tyhv/app/bootstrap.php.cache:1428, referer: http://local.tyhv/admin/menu/new
+[Fri Jul 12 11:15:33 2013] [error] [client 127.0.0.1] PHP   7. SM\\Bundle\\AdminBundle\\Controller\\MenuController->getMenuParentByPositionAction() /home/www/local.tyhv/app/bootstrap.php.cache:0, referer: http://local.tyhv/admin/menu/new
+[Fri Jul 12 11:15:33 2013] [error] [client 127.0.0.1] PHP   8. SM\\Bundle\\AdminBundle\\Repository\\MenuRepository->getOptionParent() /home/www/local.tyhv/src/SM/Bundle/AdminBundle/Controller/MenuController.php:583, referer: http://local.tyhv/admin/menu/new
+[Fri Jul 12 11:15:51 2013] [error] [client 127.0.0.1] PHP Fatal error:  Call to a member function getTreeName() on a non-object in /home/www/local.tyhv/src/SM/Bundle/AdminBundle/Repository/MenuRepository.php on line 576, referer: http://local.tyhv/admin/menu/new
+[Fri Jul 12 11:15:51 2013] [error] [client 127.0.0.1] PHP Stack trace:, referer: http://local.tyhv/admin/menu/new
+[Fri Jul 12 11:15:51 2013] [error] [client 127.0.0.1] PHP   1. {main}() /home/www/local.tyhv/web/app.php:0, referer: http://local.tyhv/admin/menu/new
+[Fri Jul 12 11:15:51 2013] [error] [client 127.0.0.1] PHP   2. Symfony\\Component\\HttpKernel\\Kernel->handle() /home/www/local.tyhv/web/app.php:24, referer: http://local.tyhv/admin/menu/new
+[Fri Jul 12 11:15:51 2013] [error] [client 127.0.0.1] PHP   3. Symfony\\Bundle\\FrameworkBundle\\HttpKernel->handle() /home/www/local.tyhv/app/bootstrap.php.cache:619, referer: http://local.tyhv/admin/menu/new
+[Fri Jul 12 11:15:51 2013] [error] [client 127.0.0.1] PHP   4. Symfony\\Component\\HttpKernel\\HttpKernel->handle() /home/www/local.tyhv/app/bootstrap.php.cache:1568, referer: http://local.tyhv/admin/menu/new
+[Fri Jul 12 11:15:51 2013] [error] [client 127.0.0.1] PHP   5. Symfony\\Component\\HttpKernel\\HttpKernel->handleRaw() /home/www/local.tyhv/app/bootstrap.php.cache:1392, referer: http://local.tyhv/admin/menu/new
+[Fri Jul 12 11:15:51 2013] [error] [client 127.0.0.1] PHP   6. call_user_func_array() /home/www/local.tyhv/app/bootstrap.php.cache:1428, referer: http://local.tyhv/admin/menu/new
+[Fri Jul 12 11:15:51 2013] [error] [client 127.0.0.1] PHP   7. SM\\Bundle\\AdminBundle\\Controller\\MenuController->getMenuParentByPositionAction() /home/www/local.tyhv/app/bootstrap.php.cache:0, referer: http://local.tyhv/admin/menu/new
+[Fri Jul 12 11:15:51 2013] [error] [client 127.0.0.1] PHP   8. SM\\Bundle\\AdminBundle\\Repository\\MenuRepository->getOptionParent() /home/www/local.tyhv/src/SM/Bundle/AdminBundle/Controller/MenuController.php:583, referer: http://local.tyhv/admin/menu/new

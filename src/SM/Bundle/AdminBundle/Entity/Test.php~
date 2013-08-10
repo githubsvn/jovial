@@ -1,0 +1,128 @@
+<?php
+
+namespace SM\Bundle\AdminBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * Test
+ *
+ * @ORM\Table(name="mtx_test")
+ * @ORM\Entity(repositoryClass="SM\Bundle\AdminBundle\Repository\TestRepository")
+ */
+class Test
+{
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="id", type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="AUTO")
+     */
+    private $id;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="title", type="string", length=255)
+     */
+    private $title;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="des", type="text")
+     */
+    private $des;
+
+    /**
+     * @var \DateTime
+     *
+     * @ORM\Column(name="created_at", type="datetime")
+     */
+    private $created_at;
+
+    /**
+     * @ORM\ManyToOne(targetEntity="MediaCategory")
+     */
+    private $category;
+
+    /**
+     * Get id
+     *
+     * @return integer
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * Set title
+     *
+     * @param string $title
+     * @return Test
+     */
+    public function setTitle($title)
+    {
+        $this->title = $title;
+
+        return $this;
+    }
+
+    /**
+     * Get title
+     *
+     * @return string
+     */
+    public function getTitle()
+    {
+        return $this->title;
+    }
+
+    /**
+     * Set des
+     *
+     * @param string $des
+     * @return Test
+     */
+    public function setDes($des)
+    {
+        $this->des = $des;
+
+        return $this;
+    }
+
+    /**
+     * Get des
+     *
+     * @return string
+     */
+    public function getDes()
+    {
+        return $this->des;
+    }
+
+    /**
+     * Set created_at
+     *
+     * @param \DateTime $createdAt
+     * @return Test
+     */
+    public function setCreatedAt($createdAt)
+    {
+        $this->created_at = $createdAt;
+
+        return $this;
+    }
+
+    /**
+     * Get created_at
+     *
+     * @return \DateTime
+     */
+    public function getCreatedAt()
+    {
+        return $this->created_at;
+    }
+}

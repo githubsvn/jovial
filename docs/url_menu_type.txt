@@ -1,0 +1,23 @@
+Menu type
+1. category company
+2. company
+3. branch product
+4. group product
+5. product
+6. category news
+7. news
+8. page static
+
+=============================================================================
+
+1. menu type = category company 	==> /company/cat/id
+2. menu type = company detail		==> /company/detail/id
+3. menu type = branch product		==> /product/branch/id
+4. menu type = group product		==> /product/group/id
+5. menu type = product detail		==> /product/detail/id
+6. menu type = category news		==> /news/cat/id
+7. menu type = news detail			==> /news/detail/id
+8. menu type = page static			==> /page/detail/id 
+
+
+
