@@ -25,13 +25,41 @@ class appProdUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirecta
         $allow = array();
         $pathinfo = rawurldecode($pathinfo);
 
-        // sm_front_homepage
-        if (rtrim($pathinfo, '/') === '') {
-            if (substr($pathinfo, -1) !== '/') {
-                return $this->redirect($pathinfo.'/', 'sm_front_homepage');
+        if (0 === strpos($pathinfo, '/')) {
+            // sm_front_homepage
+            if (rtrim($pathinfo, '/') === '') {
+                if (substr($pathinfo, -1) !== '/') {
+                    return $this->redirect($pathinfo.'/', 'sm_front_homepage');
+                }
+
+                return array (  '_controller' => 'SM\\Bundle\\FrontBundle\\Controller\\DefaultController::indexAction',  '_route' => 'sm_front_homepage',);
             }
 
-            return array (  '_controller' => 'SM\\Bundle\\FrontBundle\\Controller\\DefaultController::indexAction',  '_route' => 'sm_front_homepage',);
+            // sm_front_view_product_cat
+            if (0 === strpos($pathinfo, '/product/view-branch') && preg_match('#^/product/view\\-branch/(?P<page>[^/]+)/(?P<slug>[^/]+)$#s', $pathinfo, $matches)) {
+                return array_merge($this->mergeDefaults($matches, array (  '_controller' => 'SM\\Bundle\\FrontBundle\\Controller\\ProductController::viewCatAction',)), array('_route' => 'sm_front_view_product_cat'));
+            }
+
+            // sm_front_view_product_detail
+            if (0 === strpos($pathinfo, '/product/detail') && preg_match('#^/product/detail/(?P<slug>[^/]+)$#s', $pathinfo, $matches)) {
+                return array_merge($this->mergeDefaults($matches, array (  '_controller' => 'SM\\Bundle\\FrontBundle\\Controller\\ProductController::detailAction',)), array('_route' => 'sm_front_view_product_detail'));
+            }
+
+            // sm_front_view_news_cat
+            if (0 === strpos($pathinfo, '/news/view-cat') && preg_match('#^/news/view\\-cat/(?P<slug>[^/]+)$#s', $pathinfo, $matches)) {
+                return array_merge($this->mergeDefaults($matches, array (  '_controller' => 'SM\\Bundle\\FrontBundle\\Controller\\NewsController::viewCatAction',)), array('_route' => 'sm_front_view_news_cat'));
+            }
+
+            // sm_front_view_news_detail
+            if (0 === strpos($pathinfo, '/news/detail') && preg_match('#^/news/detail/(?P<slug>[^/]+)$#s', $pathinfo, $matches)) {
+                return array_merge($this->mergeDefaults($matches, array (  '_controller' => 'SM\\Bundle\\FrontBundle\\Controller\\NewsController::detailAction',)), array('_route' => 'sm_front_view_news_detail'));
+            }
+
+            // sm_front_view_page_detail
+            if (0 === strpos($pathinfo, '/page/detail') && preg_match('#^/page/detail/(?P<slug>[^/]+)$#s', $pathinfo, $matches)) {
+                return array_merge($this->mergeDefaults($matches, array (  '_controller' => 'SM\\Bundle\\FrontBundle\\Controller\\PageController::detailAction',)), array('_route' => 'sm_front_view_page_detail'));
+            }
+
         }
 
         // sm_acl_homepage

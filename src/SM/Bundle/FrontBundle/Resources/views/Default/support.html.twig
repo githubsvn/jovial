@@ -1,0 +1,13 @@
+<div class="block support">
+    <h2>Hỗ trợ trực tuyến</h2>
+    <ul>
+        {% for nick in skypes %}
+            <li><a href="#" title="Skype" class="skype">{{ nick }}</a></li>
+        {% endfor %}
+        
+        {% for nick in yahoos %}
+            <li><a href="#" title="Yahoo" class="yahoo">{{ nick }}</a></li>
+        {% endfor %}
+        
+    </ul>
+</div>

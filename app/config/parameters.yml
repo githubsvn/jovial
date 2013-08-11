@@ -28,7 +28,11 @@ parameters:
 
     menu_position_top: 1
     menu_position_left: 2
-    menu_position_right: 3
-    menu_position_bottom: 4
-
+    menu_position_left_bottom: 3
+    menu_position_right: 4
+    menu_position_bottom: 5
+    
     ext_nice_url: html
+    comma_nice_url: "-"
+    
+    per_item_page_front: 15

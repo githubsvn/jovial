@@ -147,6 +147,7 @@
   'StfalconTinymceBundle:Script:init.html.twig' => 'D:\\www\\jovial\\vendor\\stfalcon\\tinymce-bundle\\Stfalcon\\Bundle\\TinymceBundle/Resources/views/Script/init.html.twig',
   'LiipImagineBundle:Form:form_div_layout.html.twig' => 'D:\\www\\jovial\\vendor\\liip\\imagine-bundle\\Liip\\ImagineBundle/Resources/views/Form/form_div_layout.html.twig',
   'SMFrontBundle:Default:index.html.twig' => 'D:\\www\\jovial\\src\\SM\\Bundle\\FrontBundle/Resources/views/Default/index.html.twig',
+  'SMFrontBundle::layout.home.html.twig' => 'D:\\www\\jovial\\src\\SM\\Bundle\\FrontBundle/Resources/views/layout.home.html.twig',
   'WebProfilerBundle:Collector:config.html.twig' => 'D:\\www\\jovial\\vendor\\symfony\\symfony\\src\\Symfony\\Bundle\\WebProfilerBundle/Resources/views/Collector/config.html.twig',
   'WebProfilerBundle:Collector:events.html.twig' => 'D:\\www\\jovial\\vendor\\symfony\\symfony\\src\\Symfony\\Bundle\\WebProfilerBundle/Resources/views/Collector/events.html.twig',
   'WebProfilerBundle:Collector:exception.html.twig' => 'D:\\www\\jovial\\vendor\\symfony\\symfony\\src\\Symfony\\Bundle\\WebProfilerBundle/Resources/views/Collector/exception.html.twig',

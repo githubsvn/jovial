@@ -15,6 +15,7 @@ $catalogue = new MessageCatalogue('vi', array (
     'Delete all' => 'Xóa tất cả',
     'Top' => 'Phía trên',
     'Left' => 'Bên trái',
+    'Left Bottom' => 'Bến trái phía dưới',
     'Right' => 'Bên phải',
     'Bottom' => 'Phía dưới',
     'Do you want to delete' => 'Bạn muốn xóa mẩu tin?',

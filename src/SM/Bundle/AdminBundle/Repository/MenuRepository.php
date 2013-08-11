@@ -431,6 +431,7 @@ class MenuRepository extends EntityRepository
 
         $mnuPosTop = $container->getParameter('menu_position_top');
         $mnuPosLeft = $container->getParameter('menu_position_left');
+        $mnuPosLeftBottom = $container->getParameter('menu_position_left_bottom');
         $mnuPosRight = $container->getParameter('menu_position_right');
         $mnuPosBottom = $container->getParameter('menu_position_bottom');
 
@@ -438,6 +439,7 @@ class MenuRepository extends EntityRepository
         $options[0] = '-- Lựa chọn --';
         $options[$mnuPosTop] = 'Phía trên';
         $options[$mnuPosLeft] = 'Bên trái';
+        $options[$mnuPosLeftBottom] = 'Bên trái phía dưới';
         $options[$mnuPosRight] = 'Bên phải';
         $options[$mnuPosBottom] = 'Phía dưới';
 
@@ -537,6 +539,7 @@ class MenuRepository extends EntityRepository
 
         $mnuPosTop = $container->getParameter('menu_position_top');
         $mnuPosLeft = $container->getParameter('menu_position_left');
+        $mnuPosLeftBottom = $container->getParameter('menu_position_left_bottom');
         $mnuPosRight = $container->getParameter('menu_position_right');
         $mnuPosBottom = $container->getParameter('menu_position_bottom');
 
@@ -564,6 +567,10 @@ class MenuRepository extends EntityRepository
                 break;
             case $mnuPosLeft:
                 $criteria[] = array('op' => '=', 'fieldName' => 'position', 'fieldValue' => $mnuPosLeft);
+                $criteria[] = array('op' => '=', 'fieldName' => 'status', 'fieldValue' => 1);
+                break;
+            case $mnuPosLeftBottom:
+                $criteria[] = array('op' => '=', 'fieldName' => 'position', 'fieldValue' => $mnuPosLeftBottom);
                 break;
             case $mnuPosRight:
                 $criteria[] = array('op' => '=', 'fieldName' => 'position', 'fieldValue' => $mnuPosRight);
@@ -579,6 +586,7 @@ class MenuRepository extends EntityRepository
                 $obj->setLanguage($currentLanguage);
                 $std = new \stdClass();
                 $std->name = $obj->getCurrentLanguage()->getTreeName();
+                $std->url = $obj->getUrl();
                 $std->id = $obj->getId();
                 $options[] = $std;
             }

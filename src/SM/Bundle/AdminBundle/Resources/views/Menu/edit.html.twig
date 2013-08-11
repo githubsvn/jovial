@@ -23,17 +23,13 @@
             var typeMenu = $(this).attr('value');
 
             if (typeMenu == mnuTypeText || typeMenu == mnuTypeLink) {
-                $('#sm_bundle_adminbundle_menutype_param').removeAttr("required");
-            } else {
-                $("#sm_bundle_adminbundle_menutype_param").attr("required", "true");
-            }
-
-            if (typeMenu == mnuTypeLink) {
                 $("#url").show();
                 $("#param").hide();
+                $('#sm_bundle_adminbundle_menutype_param').removeAttr("required");
             } else {
                 $("#url").hide();
                 $("#param").show();
+                $("#sm_bundle_adminbundle_menutype_param").attr("required", "true");
             }
 
             var urlMenu = "{{path('admin_menu_get_param')}}" + '/' + typeMenu;

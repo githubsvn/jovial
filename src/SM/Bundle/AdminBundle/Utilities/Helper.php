@@ -1,8 +1,9 @@
 <?php
+
 namespace SM\Bundle\AdminBundle\Utilities;
 
-class Helper
-{
+class Helper {
+
     /**
      * @param type $string    string
      * @param type $strSymbol strSymbol
@@ -10,8 +11,7 @@ class Helper
      *
      * @return type
      */
-    public static function cleanString($string, $strSymbol = '-', $length = 255)
-    {
+    public static function cleanString($string, $strSymbol = '-', $length = 255) {
         $arrCharFrom = array(
             "ạ", "á", "à", "ả", "ã", "Ạ", "Á", "À", "Ả", "Ã",
             "â", "ậ", "ấ", "ầ", "ẩ", "ẫ", "Â", "Ậ", "Ấ", "Ầ", "Ẩ", "Ẫ",
@@ -66,8 +66,7 @@ class Helper
      * @param type $wordCount
      * @return type
      */
-    public static function getTeaser($string, $wordCount = 100)
-    {
+    public static function getTeaser($string, $wordCount = 100) {
         $string = str_replace("\n", '', $string);
         $string = preg_replace('/<style.*<\/style>/i', '', $string);
         //$string = preg_replace('/&amp;/i','&',$string);
@@ -78,12 +77,13 @@ class Helper
         if ($wordCount >= sizeof($stringc))
             return $string; //nothing to do, our string is smaller than the limit.
 
-        // trim the string to the word count
+            
+// trim the string to the word count
         for ($i = 0; $i < $wordCount; $i++)
-            $trimmed .= $stringc[$i]." ";
+            $trimmed .= $stringc[$i] . " ";
         if (substr($trimmed, strlen(trim($trimmed)) - 1, 1) == '.')
-            return trim($trimmed).' ..';
-        return trim($trimmed).' ...';
+            return trim($trimmed) . ' ..';
+        return trim($trimmed) . ' ...';
     }
 
     /**
@@ -91,15 +91,38 @@ class Helper
      * @param type $imgName
      * @return type
      */
-    public static function createThumb($imgName = '')
-    {
+    public static function createThumb($imgName = '') {
         if (!empty($imgName)) {
             $container = \SM\Bundle\AdminBundle\SMAdminBundle::getContainer();
             return $container->get('liip_imagine.controller')
-                ->filterAction( new \Symfony\Component\HttpFoundation\Request(),
-                    $imgName,
-                    'thumbs'
-                );
+                            ->filterAction(new \Symfony\Component\HttpFoundation\Request(), $imgName, 'thumbs'
+            );
         }
     }
+    
+    /**
+     * Parse id from url
+     * 
+     * @param string $url
+     * @return int 
+     */
+    public static function getIdFromUrl($url) {
+        $container = \SM\Bundle\AdminBundle\SMAdminBundle::getContainer();
+        $comma = $container->getParameter('comma_nice_url');
+        $id = '';
+        if (!empty($url)) { //The url is ao-nguc-4.html
+            $params = explode($comma, $url);
+            if (!empty($params[count($params) - 1])) {
+                $params = $params[count($params) - 1];  //The url is 4.html
+                $params = explode(".", $params);
+                if (!empty($params[0])) {
+                    
+                    return $params[0];  //This is Id
+                }
+            }
+        }
+        
+        return $id;
+    }
+
 }

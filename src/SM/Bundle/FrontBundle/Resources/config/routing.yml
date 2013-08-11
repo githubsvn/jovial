@@ -1,3 +1,22 @@
 sm_front_homepage:
-    pattern:  /
-    defaults: { _controller: SMFrontBundle:Default:index }
+  pattern:  /
+  defaults: { _controller: SMFrontBundle:Default:index }
+
+sm_front_view_product_cat:
+  pattern:  /product/view-branch/{page}/{slug}
+  defaults: { _controller: SMFrontBundle:Product:viewCat }
+  
+sm_front_view_product_detail:
+  pattern:  /product/detail/{slug}
+  defaults: { _controller: SMFrontBundle:Product:detail }  
+  
+sm_front_view_news_cat:
+  pattern:  /news/view-cat/{slug}
+  defaults: { _controller: SMFrontBundle:News:viewCat }  
+sm_front_view_news_detail:
+  pattern:  /news/detail/{slug}
+  defaults: { _controller: SMFrontBundle:News:detail }    
+
+sm_front_view_page_detail:
+  pattern:  /page/detail/{slug}
+  defaults: { _controller: SMFrontBundle:Page:detail }  
